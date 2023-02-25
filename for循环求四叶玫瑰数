@@ -1,0 +1,12 @@
+ #coding=gbk
+for d in range (150,10000,1):
+    print("this is ",d)
+    a= d//1000
+    b = (d-a*1000)//100
+    c = (d-a*1000-b*100)//10
+    e = d-a*1000-b*100-c*10
+    if a**4+b**4+c**4+e**4 == d:
+        print("是四叶玫瑰数")
+    else:
+        print("不是四叶玫瑰数")
+

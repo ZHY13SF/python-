@@ -1,0 +1,13 @@
+ #coding=gbk
+d = 100
+while d<1000: 
+    print("this is ",d)
+    a= d//100
+    b = (d-a*100)//10
+    c = d-a*100-b*10
+    if a**3+b**3+c**3==d:
+        print("是水仙花数")      
+    else:
+        print("不是水仙花数")
+    d +=1 
+

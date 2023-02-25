@@ -1,0 +1,26 @@
+ #coding=gbk
+from math import sqrt
+
+a = 1
+b = -2
+c = 3
+
+if a == 0 and b!= 0 :
+    print("只有一个根，x=",b/c)
+elif a==0 and b==0:
+    print("不存在实数根")
+elif a!=0 and  b*b-4*a*c>0:
+    print("有两个不相等的根")
+    x1=(-b+sqrt((b*b)-(4*a*c)))/2*a
+    x2=(-b-sqrt((b*b)-(4*a*c)))/2*a
+    print("x1=",x1)
+    print("x2=",x2)
+elif a!=0  and b*b-4*a*c==0:
+    print("有两个相同的根")
+    x1=(-b+sqrt((b*b)-(4*a*c)))/2*a
+    x2=(-b-sqrt((b*b)-(4*a*c)))/2*a
+    print("x1=x2=",x1)
+else:
+    print("不存在实数根")
+
+

@@ -1,0 +1,8 @@
+ #coding=gbk
+a = input ("打印你的数字")
+list = [1,2,3,4,5,6]
+list1 = []
+list1.append(float(a))
+list.extend(list1)
+list.sort()
+print(list)

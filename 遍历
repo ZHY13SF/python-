@@ -1,0 +1,12 @@
+ #coding=gbk
+information = ("t","ts","rh","pq")
+indoorAir = (26.0,23.5,0.9,2000)
+unit = ("c","c","%","Pa")
+tuple1 = (1,2,3,4)
+for item in tuple1:
+    print (information[item-1],
+           indoorAir[item-1],
+           unit[item-1])
+
+tuple = (11,12,13,14)
+print(tuple[0])

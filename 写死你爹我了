@@ -1,0 +1,50 @@
+ #coding=gbk
+list1 = [1,4,8,-2,3,-5,6,7,0]
+print("原序列",list1)
+list2 = []
+for i in range(len(list1)):
+    a = min (list1) 
+    list2.append(a)
+    list1.remove(a)
+list3 = list2[::-1]
+print("从大到小",list3)
+print("从小到大",list2)
+list7 = []
+list8 = []
+list9 = []
+list4 = []
+list5 = []
+list6 = []
+list1 = [1,4,8,-2,3,-5,6,7,0]
+for u in list1:
+    if u >0 :
+        list4.append(u)
+    elif u == 0 :
+        list5.append(u)
+    elif u <0:
+        list6.append(u)
+for i in range(len(list4)):
+    a = max (list4) 
+    list7.append(a)
+    list4.remove(a)
+for i in range(len(list5)):
+    a = min (list5) 
+    list8.append(a)
+    list5.remove(a)
+for i in range(len(list6)):
+    a = min (list6) 
+    list9.append(a)
+    list6.remove(a)
+print("正数从大到小,list7=",list7)
+print("0,list8=",list8)
+print("负数从小到大,list9=",list9)
+list10 = list7[::-1]
+list11 = list9[::-1]
+for x in range(len(list10)):
+    list11.insert(u,list10[x])
+    u += 2
+if len(list8)==0:
+    print(list11)
+else:
+    list11.extend(list8)
+    print(list11)

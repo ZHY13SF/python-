@@ -1,0 +1,16 @@
+ #coding=gbk
+weed  = {'攻击力':20,
+         "防御力":30,
+         "攻速":1.2,}
+weed["攻击力"]=25
+weed["护甲"] = 50 
+print (weed["攻击力"])
+print (weed["护甲"])
+print (weed.get("ap"))
+print (weed.get("防御力"))
+print (weed.setdefault("攻速",1.0))
+print (weed)
+weed.popitem()
+print(weed)
+for i ,u in weed.items():
+    print(f"key = {i},value = {u}")

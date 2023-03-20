@@ -1,0 +1,41 @@
+ #coding=gbk
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 20 16:29:38 2023
+
+@author: 2
+"""
+print("输入1获取数学最高分")
+print("输入2获取英语最高分")
+print("输入3获取体育最高分")
+print("输入4获取数学平均分")
+print("输入5获取英语平均分")
+print("输入6获取体育平均分")
+ddd=int(input("请做出您的选择,并输入",))
+
+datebase = {"name" :    ["xiaopei","peigou","peishen"],
+            "math" :    [80,90,85],
+            "english" : [66,80,65],
+             "sport" :  [85,95,66]} 
+mathmax = max(datebase['math'])
+englishmax = max(datebase['english'])
+sportmax = max(datebase['sport'])
+mathavg = sum(datebase['math'])/len(datebase['math'])
+englishavg = sum(datebase['english'])/len(datebase['english'])
+sportavg = sum(datebase['sport'])/len(datebase['sport'])
+if ddd == 1 :
+    print (mathmax) 
+elif ddd == 2 :
+    print (englishmax)
+elif ddd == 3 :
+    print (sportmax)
+elif ddd ==4 :
+    print (mathavg)
+elif ddd ==5 :
+    print (englishavg)
+elif ddd ==6 :
+    print (sportavg)
+else:
+    print("指令输入错误，请输入正确的指令")
+    
+    

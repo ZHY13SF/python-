@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 24 14:17:10 2023
+
+@author: 2
+"""
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+datebase = {"name" :    ["aa","bb","cc","dd","ee"],
+            
+            "studynumber":[1,15,14,18,16],
+
+            "math" :    [80,93,85,60,55],
+            
+            "computer": [82,90,68,52,55],
+            
+            "fluid" :   [80,88,85,60,52],
+
+            "english" : [66,82,65,85,89],
+
+             "sport" :  [85,95,66,56,77]} 
+shuxue  = []
+liuti   = []
+xuehao  = []
+diannao = []
+yingyu  = []
+tiyu    = []
+for i in range (len(datebase["math"and"fluid"and"computer"and
+            "english"and"sport"and"studynumber"])) :
+        a = max(datebase["studynumber"])
+        b = max(datebase["math"])
+        c = max(datebase["computer"])
+        d = max(datebase["fluid"])
+        e = max(datebase["english"])
+        f = max(datebase["sport"])
+        xuehao.append(a)
+        shuxue.append(b)
+        diannao.append(c)
+        liuti.append(d)
+        yingyu.append(e)
+        tiyu.append(f)
+        datebase["studynumber"].remove(a)
+        datebase["math"].remove(b)
+        datebase["computer"].remove(c)
+        datebase["fluid"].remove(d)
+        datebase["english"].remove(e)
+        datebase["sport"].remove(f)
+print("xuehao",xuehao,
+      "shuxue",shuxue,
+      "diannao",diannao,
+      "liutilixue",liuti,
+      "yingyu",yingyu,
+      "tiyu",tiyu)
+print("xuehao",xuehao[::-1],
+      "shuxue",shuxue[::-1],
+      "diannao",diannao[::-1],
+      "liutilixue",liuti[::-1],
+      "yingyu",yingyu[::-1],
+      "tiyu",tiyu[::-1])
